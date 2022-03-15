@@ -3,12 +3,15 @@
   "version": "2.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "live": "npx nodemon app.js & npx livereload -p 3001 -w 500"
   },
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "hbs": "^4.1.1",
+    "connect-livereload": "^0.6.1",
+    "express": "^4.17.3",
+    "hbs": "^4.2.0",
+    "livereload": "^0.9.3",
     "punkapi-javascript-wrapper": "^1.0.2"
   }
 }

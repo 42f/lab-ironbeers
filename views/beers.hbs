@@ -1,0 +1,18 @@
+<div>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Tagline</th>
+      <th>Description</th>
+      <th>Image</th>
+    </tr>
+    {{#each beers}}
+      <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.tagline}}</td>
+        <td>{{this.description}}</td>
+        <td><img src="{{this.image_url}}" alt="{{this.name}} image"> </td>
+      </tr>
+    {{/each}}
+  </table>
+</div>
