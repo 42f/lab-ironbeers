@@ -1,10 +1,5 @@
 <div class="random-beer">
-	{{#if beer.image_url}}
-  <img id="random-beer-picture" src='{{beer.image_url}}' alt='{{beer.name}} bottle' />
-	{{/if}}
-  <h2>{{beer.name}}</h2>
-  <p>{{beer.tagline}}</p>
-  <p>{{beer.description}}</p>
+  {{> beerpartial beer}}
   <h3>Food pairing:</h3>
   <ul>
     {{#each beer.food_pairing}}
@@ -12,5 +7,4 @@
     {{/each}}
   </ul>
 	<p><em>Brewer's tips:</em>{{beer.brewers_tips}}</p>
-
 </div>
